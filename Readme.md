@@ -29,18 +29,18 @@ The simulation provides several key visualizations to understand the synchroniza
 
 The Pygame window shows the `N` oscillators distributed on a unit circle.
 1.  **Initial State (Incoherent)**: Oscillators are scattered with random phases.
-    ![Initial scattered state of oscillators](https://i.imgur.com/G4Yd58x.png)
+    ![Initial scattered state of oscillators](1.png)
 2.  **Transition State (Partial Synchronization)**: Oscillators begin to cluster together as the simulation progresses.
-    ![Partially synchronized oscillators](https://i.imgur.com/8Qe5i7W.png)
+    ![Partially synchronized oscillators](2.png)
 3.  **Final State (Synchronized)**: The majority of oscillators lock phases and move together.
-    ![Synchronized state of oscillators](https://i.imgur.com/9n6bHkR.png)
+    ![Synchronized state of oscillators](3.png)
 
 ### Analytical Plots
 
 After the simulation, the notebook generates the following plots for analysis:
 
 1.  **Phases of Oscillators vs. Time**: This plot shows how the phase of each oscillator converges. In this example, you can see partial synchronization, where oscillators form distinct phase-locked clusters.
-    ![Phase Plot](https://i.imgur.com/XGf18Ww.png)
+    ![Phase Plot]
 
 2.  **Order Parameter vs. Time**: The order parameter `r` measures the overall coherence. `r = 0` indicates complete incoherence, while `r = 1` indicates full synchronization. The plot shows `r` increasing over time and stabilizing at a value less than 1, confirming partial synchronization.
     ![Order Parameter Plot](https://i.imgur.com/81y5160.png)
@@ -54,7 +54,7 @@ To run this project locally, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/kuramoto-model-simulation.git](https://github.com/your-username/kuramoto-model-simulation.git)
+    git clone [https://github.com/adritacb/kuramoto-model-simulation.git](https://github.com/adritacb/kuramoto-model-simulation.git)
     cd kuramoto-model-simulation
     ```
 
@@ -98,13 +98,3 @@ The Kuramoto model exhibits fascinating collective behavior, which is captured i
 - **Order Parameter (`r`)**: The order parameter `r` quantifies this coherence. In the `r` vs. time plot, the value stabilizes below 1, which is characteristic of partial synchronization. If there were multiple clusters with different average phases, their vector sum on the complex plane results in a smaller magnitude, hence `r < 1`.
 - **Phase Transition (`Kc`)**: The `r` vs. `K` plot clearly shows a phase transition. For `K < Kc`, the oscillators remain largely incoherent. As `K` approaches and surpasses the critical coupling `Kc`, the system undergoes a rapid transition to a synchronized state, indicated by the sharp increase in the final order parameter `r`.
 
-## 📦 Requirements
-
-Create a file named `requirements.txt` in your project's root directory and add the following content:
-
-```txt
-pygame==2.6.1
-ipython==7.31.1
-numpy
-scipy
-matplotlib
