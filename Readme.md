@@ -40,13 +40,13 @@ The Pygame window shows the `N` oscillators distributed on a unit circle.
 After the simulation, the notebook generates the following plots for analysis:
 
 1.  **Phases of Oscillators vs. Time**: This plot shows how the phase of each oscillator converges. In this example, you can see partial synchronization, where oscillators form distinct phase-locked clusters.
-    ![Phase Plot]
+    ![Phase Plot](phase_of_oscillators.png)
 
 2.  **Order Parameter vs. Time**: The order parameter `r` measures the overall coherence. `r = 0` indicates complete incoherence, while `r = 1` indicates full synchronization. The plot shows `r` increasing over time and stabilizing at a value less than 1, confirming partial synchronization.
-    ![Order Parameter Plot](https://i.imgur.com/81y5160.png)
+    ![Order Parameter Plot](order_parameter_over_time.png)
 
 3.  **Order Parameter vs. Coupling Strength (K)**: This plot illustrates the critical phase transition. The system remains incoherent (`r` ≈ 0) for low `K` values and abruptly synchronizes once `K` exceeds a critical value (`Kc`), which is estimated by the red dashed line.
-    ![r vs K Plot](https://i.imgur.com/81i0V6Q.png)
+    ![r vs K Plot](order_parameter_vs_coupling.png)
 
 ## 🔧 Installation & Setup
 
